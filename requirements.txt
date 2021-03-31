@@ -3,6 +3,5 @@ theano == 1.0.5
 csv == 1.0
 keras == 2.1.1
 gensim == 3.2.0
-random == 
 scipy == 1.2.2
 sklearn == 0.0
