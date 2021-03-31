@@ -1,0 +1,9 @@
+numpy
+theano
+csv
+keras
+gensim
+random
+scipy
+keras
+sklearn
