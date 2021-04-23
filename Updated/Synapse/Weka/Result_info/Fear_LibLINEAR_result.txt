@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LibLINEAR -S 11 -C 1.0 -E 0.001 -B 1.0 -L 0.1 -I 1000
+Relation:     anger_test-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.AllFilter-weka.filters.unsupervised.attribute.TweetToLexiconFeatureVector-F-D-R-A-T-L-N-P-J-H-Q-red-stan-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-I1-U-tokenizerweka.core.tokenizers.TweetNLPTokenizer-weka.filters.unsupervised.attribute.TweetToSentiStrengthFeatureVector-L/home/prachuryya/wekafiles/packages/AffectiveTweets/lexicons/SentiStrength/english-red-stan-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-I1-U-tokenizerweka.core.tokenizers.TweetNLPTokenizer-weka.filters.MultiFilter-Fweka.filters.AllFilter-Fweka.filters.unsupervised.attribute.TweetToLexiconFeatureVector -F -D -R -A -T -L -N -P -J -H -Q -red -stan -stemmer weka.core.stemmers.NullStemmer -stopwords-handler "weka.core.stopwords.Null " -I 1 -U -tokenizer "weka.core.tokenizers.TweetNLPTokenizer "-Fweka.filters.unsupervised.attribute.TweetToSentiStrengthFeatureVector -L /home/prachuryya/wekafiles/packages/AffectiveTweets/lexicons/SentiStrength/english -red -stan -stemmer weka.core.stemmers.NullStemmer -stopwords-handler "weka.core.stopwords.Null " -I 1 -U -tokenizer "weka.core.tokenizers.TweetNLPTokenizer "-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1147
+Attributes:   50
+              score
+              mpqa-posCount
+              mpqa-negCount
+              BingLiu-posCount
+              BingLiu-negCount
+              AFINN-posScore
+              AFINN-negScore
+              S140-posScore
+              S140-negScore
+              NRC-Hash-Sent-posScore
+              NRC-Hash-Sent-negScore
+              NRC-10-anger
+              NRC-10-anticipation
+              NRC-10-disgust
+              NRC-10-fear
+              NRC-10-joy
+              NRC-10-sadness
+              NRC-10-surprise
+              NRC-10-trust
+              NRC-10-negative
+              NRC-10-positive
+              NRC-10-Expanded-anger
+              NRC-10-Expanded-anticipation
+              NRC-10-Expanded-disgust
+              NRC-10-Expanded-fear
+              NRC-10-Expanded-joy
+              NRC-10-Expanded-sadness
+              NRC-10-Expanded-surprise
+              NRC-10-Expanded-trust
+              NRC-10-Expanded-negative
+              NRC-10-Expanded-positive
+              NRC-Hash-Emo-anger
+              NRC-Hash-Emo-anticipation
+              NRC-Hash-Emo-disgust
+              NRC-Hash-Emo-fear
+              NRC-Hash-Emo-joy
+              NRC-Hash-Emo-sadness
+              NRC-Hash-Emo-surprise
+              NRC-Hash-Emo-trust
+              SentiWordnet-posScore
+              SentiWordnet-negScore
+              Emoticons-posScore
+              Emoticons-negScore
+              Negation-negationCount
+              SentiStrength-posScore
+              SentiStrength-negScore
+              anger_cnn
+              fear_cnn
+              joy_cnn
+              sadness_cnn
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LibLINEAR wrapper
+
+Model bias=1.0 nr_class=2 nr_feature=50 solverType=L2R_L2LOSS_SVR
+
++        0.01 * mpqa-posCount
++        0    * mpqa-negCount
+-        0    * BingLiu-posCount
++        0    * BingLiu-negCount
++        0    * AFINN-posScore
+-        0    * AFINN-negScore
+-        0    * S140-posScore
+-        0.01 * S140-negScore
++        0    * NRC-Hash-Sent-posScore
++        0    * NRC-Hash-Sent-negScore
+-        0.01 * NRC-10-anger
+-        0    * NRC-10-anticipation
++        0.02 * NRC-10-disgust
+-        0    * NRC-10-fear
++        0.01 * NRC-10-joy
++        0.02 * NRC-10-sadness
++        0.01 * NRC-10-surprise
+-        0.01 * NRC-10-trust
+-        0    * NRC-10-negative
+-        0.01 * NRC-10-positive
+-        0.02 * NRC-10-Expanded-anger
+-        0.01 * NRC-10-Expanded-anticipation
++        0.01 * NRC-10-Expanded-disgust
++        0.03 * NRC-10-Expanded-fear
+-        0    * NRC-10-Expanded-joy
+-        0.03 * NRC-10-Expanded-sadness
++        0.04 * NRC-10-Expanded-surprise
++        0.01 * NRC-10-Expanded-trust
+-        0.02 * NRC-10-Expanded-negative
++        0.01 * NRC-10-Expanded-positive
++        0.01 * NRC-Hash-Emo-anger
+-        0.01 * NRC-Hash-Emo-anticipation
+-        0    * NRC-Hash-Emo-disgust
++        0.02 * NRC-Hash-Emo-fear
+-        0.01 * NRC-Hash-Emo-joy
+-        0.01 * NRC-Hash-Emo-sadness
+-        0.01 * NRC-Hash-Emo-surprise
+-        0    * NRC-Hash-Emo-trust
+-        0.01 * SentiWordnet-posScore
++        0.01 * SentiWordnet-negScore
+-        0    * Emoticons-posScore
++        0    * Emoticons-negScore
+-        0.02 * Negation-negationCount
+-        0.02 * SentiStrength-posScore
+-        0    * SentiStrength-negScore
++        0.03 * anger_cnn
++        0.69 * fear_cnn
+-        0    * joy_cnn
++        0.11 * sadness_cnn
++        0.09 * 1.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.6577
+Mean absolute error                      0.1202
+Root mean squared error                  0.1513
+Relative absolute error                 72.8121 %
+Root relative squared error             75.3005 %
+Total Number of Instances              995     
+

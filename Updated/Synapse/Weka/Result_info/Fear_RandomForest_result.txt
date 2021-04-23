@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     anger_test-weka.filters.unsupervised.attribute.Remove-R1,3-weka.filters.AllFilter-weka.filters.unsupervised.attribute.TweetToLexiconFeatureVector-F-D-R-A-T-L-N-P-J-H-Q-red-stan-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-I1-U-tokenizerweka.core.tokenizers.TweetNLPTokenizer-weka.filters.unsupervised.attribute.TweetToSentiStrengthFeatureVector-L/home/prachuryya/wekafiles/packages/AffectiveTweets/lexicons/SentiStrength/english-red-stan-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-I1-U-tokenizerweka.core.tokenizers.TweetNLPTokenizer-weka.filters.MultiFilter-Fweka.filters.AllFilter-Fweka.filters.unsupervised.attribute.TweetToLexiconFeatureVector -F -D -R -A -T -L -N -P -J -H -Q -red -stan -stemmer weka.core.stemmers.NullStemmer -stopwords-handler "weka.core.stopwords.Null " -I 1 -U -tokenizer "weka.core.tokenizers.TweetNLPTokenizer "-Fweka.filters.unsupervised.attribute.TweetToSentiStrengthFeatureVector -L /home/prachuryya/wekafiles/packages/AffectiveTweets/lexicons/SentiStrength/english -red -stan -stemmer weka.core.stemmers.NullStemmer -stopwords-handler "weka.core.stopwords.Null " -I 1 -U -tokenizer "weka.core.tokenizers.TweetNLPTokenizer "-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1147
+Attributes:   50
+              score
+              mpqa-posCount
+              mpqa-negCount
+              BingLiu-posCount
+              BingLiu-negCount
+              AFINN-posScore
+              AFINN-negScore
+              S140-posScore
+              S140-negScore
+              NRC-Hash-Sent-posScore
+              NRC-Hash-Sent-negScore
+              NRC-10-anger
+              NRC-10-anticipation
+              NRC-10-disgust
+              NRC-10-fear
+              NRC-10-joy
+              NRC-10-sadness
+              NRC-10-surprise
+              NRC-10-trust
+              NRC-10-negative
+              NRC-10-positive
+              NRC-10-Expanded-anger
+              NRC-10-Expanded-anticipation
+              NRC-10-Expanded-disgust
+              NRC-10-Expanded-fear
+              NRC-10-Expanded-joy
+              NRC-10-Expanded-sadness
+              NRC-10-Expanded-surprise
+              NRC-10-Expanded-trust
+              NRC-10-Expanded-negative
+              NRC-10-Expanded-positive
+              NRC-Hash-Emo-anger
+              NRC-Hash-Emo-anticipation
+              NRC-Hash-Emo-disgust
+              NRC-Hash-Emo-fear
+              NRC-Hash-Emo-joy
+              NRC-Hash-Emo-sadness
+              NRC-Hash-Emo-surprise
+              NRC-Hash-Emo-trust
+              SentiWordnet-posScore
+              SentiWordnet-negScore
+              Emoticons-posScore
+              Emoticons-negScore
+              Negation-negationCount
+              SentiStrength-posScore
+              SentiStrength-negScore
+              anger_cnn
+              fear_cnn
+              joy_cnn
+              sadness_cnn
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 1.94 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.11 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.6987
+Mean absolute error                      0.1163
+Root mean squared error                  0.1454
+Relative absolute error                 70.4604 %
+Root relative squared error             72.3727 %
+Total Number of Instances              995     
+
